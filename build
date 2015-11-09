@@ -1,0 +1,49 @@
+#!/bin/sh
+
+cd src/bin-seqs/
+make
+cd ../../
+cp src/bin-seqs/bin-seqs bin/
+
+cd src/extr-pred-cds/
+make
+cd ../../
+cp src/extr-pred-cds/extr-pred-cds bin/
+
+cd src/get-data/
+make
+cd ../../
+cp src/get-data/get-data bin/
+
+cd src/metalocs-operate/
+make
+cd ../../
+cp src/metalocs-operate/metalocs-operate bin/
+
+cd src/metatisa/
+make
+cd ../../
+cp src/metatisa/metatisa bin/
+
+cd src/parse-blast/
+make
+cd ../../
+cp src/parse-blast/parse-blast bin/
+
+cd src/svm-predict/
+make
+cd ../../
+cp src/svm-predict/svm-predict bin/
+
+cd src/svm-scale/
+make
+cd ../../
+cp src/svm-scale/svm-scale bin/
+
+cd src/svm-train/
+make
+cd ../../
+cp src/svm-train/svm-train bin/
+
+chmod a+x scripts/*.py
+
